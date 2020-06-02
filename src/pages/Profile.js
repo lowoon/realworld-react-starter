@@ -2,7 +2,6 @@ import React from "react";
 
 const Profile = props => (
   <div className="profile-page">
-
     <div className="user-info">
       <div className="container">
         <div className="row">
@@ -10,7 +9,8 @@ const Profile = props => (
             <img src="http://i.imgur.com/Qr71crq.jpg" className="user-img"/>
             <h4>Eric Simons</h4>
             <p>
-              Cofounder @GoThinkster, lived in Aol's HQ for a few months, kinda looks like Peeta from the Hunger Games
+              Cofounder @GoThinkster, lived in Aol's HQ for a few months, kinda looks like Peeta
+              from the Hunger Games
             </p>
             <button className="btn btn-sm btn-outline-secondary action-btn">
               <i className="ion-plus-round"></i>
