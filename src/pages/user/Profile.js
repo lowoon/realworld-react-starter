@@ -13,7 +13,7 @@ const Profile = props => (
               from the Hunger Games
             </p>
             <button className="btn btn-sm btn-outline-secondary action-btn">
-              <i className="ion-plus-round"></i>
+              <i className="ion-plus-round"/>
               &nbsp;
               Follow Eric Simons
             </button>

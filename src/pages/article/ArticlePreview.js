@@ -8,7 +8,7 @@ function ArticlePreview({ article }) {
       <div className="article-meta">
         <Link to="/profile"><img src={article.author.image}/></Link>
         <div className="info">
-          <Link to="/profile" className="author">{article.author.username}</Link>
+          <Link to="/profile/:username" className="author">{article.author.username}</Link>
           <span className="date">{moment(article.createdAt).format('MMMM Do')}</span>
         </div>
         <button className="btn btn-outline-primary btn-sm pull-xs-right">

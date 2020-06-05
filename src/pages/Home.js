@@ -1,23 +1,18 @@
 import React, { useEffect, useState } from "react";
-import axios from 'axios';
-import ArticlePreview from './ArticlePreview';
+import api from '../api/api.js'
+import ArticlePreview from './article/ArticlePreview';
 
 const Home = () => {
-  const [articles, setArticles] = useState([]);
-
   useEffect(() => {
     const getArticles = async () => {
-      const res = await axios.get("https://conduit.productionready.io/api/articles", {
-        headers: {
-          "Accept": "application/json",
-          "Content-Type": "application/json"
-        },
-      });
-      const content = await res.data;
+      const result = await api.article.getAll();
+      const content = result.data;
       setArticles(content.articles);
     }
     getArticles();
-  }, [articles])
+  }, [])
+
+  const [articles, setArticles] = useState([]);
 
   return (
     <div className="home-page">
